@@ -12,7 +12,7 @@ getResistenza = (numero) => {
   return 1 + getResistenza(nuovoNumero);
 };
 
-// console.log(getResistenza(352));
+console.log(getResistenza(1679));
 
 // 2)
 trovaNumeroConTargetResistenza = (targetResistenza) => {
@@ -52,7 +52,7 @@ getMaxFrequente = (array) => {
   return Math.min(...numeriConMaxFrequenza);
 };
 
-console.log(getMaxFrequente([2, 54, 54, 2, 2, 2, 54, 54, 2, 54]));
+console.log(getMaxFrequente([1, 52, 52, 1, 56, 1, 54, 54, 1, 54]));
 
 // 4)
 getMaxFrequente = (array, k) => {
@@ -75,4 +75,4 @@ getMaxFrequente = (array, k) => {
   return piuFrequenti;
 };
 
-console.log(getMaxFrequente([1,1,1,2,2,3,3], 3));
+console.log(getMaxFrequente([1, 52, 52, 52, 1, 56, 1, 54, 54, 1, 54], 3));
